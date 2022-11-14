@@ -46,6 +46,6 @@ public class Lab3 {
      * @param log
      */
     public static void setLog(String log) {
-        Lab3.log += log;
+        Lab3.log += log + "\n";
     }
 }
