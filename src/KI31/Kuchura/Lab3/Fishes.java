@@ -13,7 +13,7 @@ public class Fishes {
 
     /**
      * Get number of fishes
-     * @return
+     * @return number
      */
     public int getNumber() {
         Lab3.setLog("getNumber()");

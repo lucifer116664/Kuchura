@@ -22,7 +22,7 @@ public class BarrelOfToxins {
 
     /**
      * Get volume of barrel
-     * @return
+     * @return volume
      */
     public int getVolume() {
         Lab3.setLog("getVolume()");

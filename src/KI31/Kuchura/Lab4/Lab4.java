@@ -1,11 +1,10 @@
 package KI31.Kuchura.Lab4;
 
-import KI31.Kuchura.Lab3.BodyOfWater;
-
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
+/**
+ * Class-driver
+ */
 public class Lab4 {
 
     public static void main(String[] args) {

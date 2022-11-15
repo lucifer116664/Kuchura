@@ -1,5 +1,8 @@
 package KI31.Kuchura.Lab4;
 
+/**
+ * Describes sea
+ */
 public class Sea extends BodyOfWater implements Tourists{
 
     int numberOfTourists;
@@ -37,18 +40,34 @@ public class Sea extends BodyOfWater implements Tourists{
         }
     }
 
+    /**
+     *
+     * @return numberOfSerfers
+     */
     public int getNumberOfSerfers() {
         return numberOfSerfers;
     }
 
+    /**
+     *
+     * @return numberOfTourists
+     */
     public int getNumberOfTourists() {
         return numberOfTourists;
     }
 
+    /**
+     *
+     * @return numberOfFishes
+     */
     public int getNumberOfFishes() {
         return numberOfFishes;
     }
 
+    /**
+     *
+     * @return numberOfWaterPlants
+     */
     public int getNumberOfWaterPlants() {
         return numberOfWaterPlants;
     }

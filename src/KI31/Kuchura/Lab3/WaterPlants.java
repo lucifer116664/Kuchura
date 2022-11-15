@@ -13,7 +13,7 @@ public class WaterPlants {
 
     /**
      * Get number of water plants
-     * @return
+     * @return number
      */
     public int getNumber() {
         Lab3.setLog("getNumber()");
