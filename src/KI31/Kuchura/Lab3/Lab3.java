@@ -27,8 +27,8 @@ public class Lab3 {
                 default -> System.out.println("You`ve entered wrong command.");
             }
 
-            try(PrintWriter fout = new PrintWriter("src/KI31/Kuchura/Lab3/Log.txt")){
-                fout.print(log);
+            try(PrintWriter printWr = new PrintWriter("src/KI31/Kuchura/Lab3/Log.txt")){
+                printWr.print(log);
             }
             catch(FileNotFoundException ex) {
                 System.out.println("File not found");
