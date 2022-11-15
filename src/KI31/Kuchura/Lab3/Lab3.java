@@ -34,7 +34,7 @@ public class Lab3 {
                 System.out.println("File not found");
             }
 
-            if (water.waterPlants.getNumber() <= 0 || water.fishes.getNumber() <= 0) {
+            if (water.waterPlants.getNumber() == 0 && water.fishes.getNumber() == 0) {
                 System.out.println("You have exterminated every alive organism in the body of water. Keep it up. Good bye.");
                 break;
             }
