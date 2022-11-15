@@ -16,15 +16,15 @@ public class Sea extends BodyOfWater implements Tourists{
 
     @Override
     public void pourBarrelInTheWater() {
-        setNumberOfSerfers();
         setNumberOfTourists();
+        setNumberOfSerfers();
         super.pourBarrelInTheWater();
         System.out.println("There also are " + numberOfTourists + " tourists and " + numberOfSerfers + " serfers.");
     }
 
     @Override
     public void setNumberOfTourists() {
-        for (int i = 0; i < barrenVolume/10; i++) {
+        for (int i = 0; i < barrelCapacity/10; i++) {
             if (numberOfTourists == 0)
                 break;
             numberOfTourists -= 100;
@@ -33,7 +33,7 @@ public class Sea extends BodyOfWater implements Tourists{
 
     @Override
     public void setNumberOfSerfers() {
-        for (int i = 0; i < barrenVolume/10; i += 10) {
+        for (int i = 0; i < barrelCapacity/10; i++) {
             if (numberOfSerfers == 0)
                 break;
             numberOfSerfers -= 10;

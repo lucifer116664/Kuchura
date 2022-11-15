@@ -10,24 +10,24 @@ public abstract class BodyOfWater {
 
     protected int numberOfFishes;
     protected int numberOfWaterPlants;
-    protected int barrenVolume;
+    protected int barrelCapacity;
 
     public BodyOfWater() {
         numberOfFishes = 10000;
         numberOfWaterPlants = 10000;
-        barrenVolume = 10;
+        barrelCapacity = 10;
     }
 
     /**
      * Pours toxins in the water
      */
     public void pourBarrelInTheWater() {
-        if (barrenVolume == 0) {
+        if (barrelCapacity == 0) {
             System.out.println("You can`t pour toxins, the barrel is empty.");
         }
         else {
-            int howManyToxins = barrenVolume / 10;
-            barrenVolume = 0;
+            int howManyToxins = barrelCapacity / 10;
+            barrelCapacity = 0;
             for (int i = 0; i < howManyToxins; i++) {
                 if (numberOfWaterPlants == 0)
                     break;
@@ -55,6 +55,6 @@ public abstract class BodyOfWater {
      */
     public void takeNewBarrel() {
         System.out.println("Choose the volume of new barrel:");
-        barrenVolume = scan.nextInt();
+        barrelCapacity = scan.nextInt();
     }
 }

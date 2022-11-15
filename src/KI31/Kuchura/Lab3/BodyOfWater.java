@@ -15,11 +15,11 @@ public class BodyOfWater {
      */
     public void pourBarrelInTheWater() {
         Lab3.setLog("pourBarrelInTheWater()");
-        if (barrelOfToxins.getVolume() == 0) {
+        if (barrelOfToxins.getCapacity() == 0) {
             System.out.println("You can`t pour toxins, the barrel is empty.");
         }
         else {
-            int howManyToxins = barrelOfToxins.getVolume() / 10;
+            int howManyToxins = barrelOfToxins.getCapacity() / 10;
             barrelOfToxins.pour();
             for (int i = 0; i < howManyToxins; i++) {
                 if (waterPlants.getNumber() == 0)
@@ -50,6 +50,6 @@ public class BodyOfWater {
     public void takeNewBarrel() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Choose the volume of new barrel:");
-        barrelOfToxins.setVolume(scan.nextInt());
+        barrelOfToxins.setCapacity(scan.nextInt());
     }
 }
